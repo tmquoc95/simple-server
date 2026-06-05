@@ -1,0 +1,21 @@
+{
+  "family": "go-app-task",
+  "requiresCompatibilities": ["EC2"],
+  "networkMode": "bridge",
+  "containerDefinitions": [
+    {
+      "name": "go-container",
+      "image": "275695104845.dkr.ecr.ap-southeast-2.amazonaws.com/bunny001/simple_server:latest",
+      "cpu": 256,
+      "memoryReservation": 512,
+      "portMappings": [
+        {
+          "containerPort": 8080,
+          "hostPort": 80,
+          "protocol": "tcp"
+        }
+      ],
+      "essential": true
+    }
+  ]
+}
