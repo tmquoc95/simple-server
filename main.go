@@ -13,7 +13,7 @@ func helloHandler(w http.ResponseWriter, r *http.Request) {
 		http.NotFound(w, r)
 		return
 	}
-	fmt.Fprint(w, "Hello, World! Welcome to your Go web server v2.")
+	fmt.Fprint(w, "Hello, World! Welcome to your Go web server v3.")
 }
 
 // apiHandler handles requests to the "/api" route
