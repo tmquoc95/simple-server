@@ -13,7 +13,7 @@ env:
   ROLE_TO_ASSUME: arn:aws:iam::275695104845:role/MyGitHubEcsDeployRole # Your OIDC IAM Role
   ECR_REPOSITORY: bunny001/simple_server                                   # Your ECR Repo Name
   ECS_CLUSTER: bunny001_cluster                             # Your ECS Cluster Name
-  ECS_SERVICE: go-web-service                                # Your ECS Service Name
+  ECS_SERVICE: go-app-task-service-l1oy1azo                         # Your ECS Service Name
 
 jobs:
   deploy:
